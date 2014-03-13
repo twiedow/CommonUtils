@@ -15,6 +15,7 @@
 		5A5B537E18D1AE7200ACE04A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A5B537C18D1AE7200ACE04A /* InfoPlist.strings */; };
 		5A5B538018D1AE7200ACE04A /* CommonUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B537F18D1AE7200ACE04A /* CommonUtilsTests.m */; };
 		5A5B538F18D1AED300ACE04A /* ObjectDumper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B538E18D1AED300ACE04A /* ObjectDumper.m */; };
+		5A5B539718D1CA5B00ACE04A /* GeoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B539618D1CA5B00ACE04A /* GeoUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		5A5B537F18D1AE7200ACE04A /* CommonUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonUtilsTests.m; sourceTree = "<group>"; };
 		5A5B538D18D1AED300ACE04A /* ObjectDumper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectDumper.h; sourceTree = "<group>"; };
 		5A5B538E18D1AED300ACE04A /* ObjectDumper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectDumper.m; sourceTree = "<group>"; };
+		5A5B539518D1CA5B00ACE04A /* GeoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoUtil.h; sourceTree = "<group>"; };
+		5A5B539618D1CA5B00ACE04A /* GeoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +148,18 @@
 			children = (
 				5A5B538D18D1AED300ACE04A /* ObjectDumper.h */,
 				5A5B538E18D1AED300ACE04A /* ObjectDumper.m */,
+				5A5B539418D1CA4B00ACE04A /* Geo */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		5A5B539418D1CA4B00ACE04A /* Geo */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B539518D1CA5B00ACE04A /* GeoUtil.h */,
+				5A5B539618D1CA5B00ACE04A /* GeoUtil.m */,
+			);
+			path = Geo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A5B538F18D1AED300ACE04A /* ObjectDumper.m in Sources */,
+				5A5B539718D1CA5B00ACE04A /* GeoUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
