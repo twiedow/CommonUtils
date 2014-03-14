@@ -16,6 +16,7 @@
 		5A5B538018D1AE7200ACE04A /* CommonUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B537F18D1AE7200ACE04A /* CommonUtilsTests.m */; };
 		5A5B538F18D1AED300ACE04A /* ObjectDumper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B538E18D1AED300ACE04A /* ObjectDumper.m */; };
 		5A5B539718D1CA5B00ACE04A /* GeoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B539618D1CA5B00ACE04A /* GeoUtil.m */; };
+		5A6D732518D3A8DA00B42685 /* LocationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6D732418D3A8DA00B42685 /* LocationUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		5A5B538E18D1AED300ACE04A /* ObjectDumper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectDumper.m; sourceTree = "<group>"; };
 		5A5B539518D1CA5B00ACE04A /* GeoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoUtil.h; sourceTree = "<group>"; };
 		5A5B539618D1CA5B00ACE04A /* GeoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoUtil.m; sourceTree = "<group>"; };
+		5A6D732318D3A8DA00B42685 /* LocationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUtil.h; sourceTree = "<group>"; };
+		5A6D732418D3A8DA00B42685 /* LocationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 			children = (
 				5A5B539518D1CA5B00ACE04A /* GeoUtil.h */,
 				5A5B539618D1CA5B00ACE04A /* GeoUtil.m */,
+				5A6D732318D3A8DA00B42685 /* LocationUtil.h */,
+				5A6D732418D3A8DA00B42685 /* LocationUtil.m */,
 			);
 			path = Geo;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A6D732518D3A8DA00B42685 /* LocationUtil.m in Sources */,
 				5A5B538F18D1AED300ACE04A /* ObjectDumper.m in Sources */,
 				5A5B539718D1CA5B00ACE04A /* GeoUtil.m in Sources */,
 			);
@@ -425,6 +431,7 @@
 				5A5B538518D1AE7200ACE04A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A5B538618D1AE7200ACE04A /* Build configuration list for PBXNativeTarget "CommonUtilsTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +440,7 @@
 				5A5B538818D1AE7200ACE04A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
