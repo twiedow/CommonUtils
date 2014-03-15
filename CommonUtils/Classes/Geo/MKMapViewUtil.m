@@ -16,11 +16,11 @@
 	CLLocationCoordinate2D bottomRightCoord = CLLocationCoordinate2DMake(90, -180);
 
 	for (id<MKAnnotation> annotation in annotations) {
+		topLeftCoord.latitude=fmax(topLeftCoord.latitude, annotation.coordinate.latitude);
 		topLeftCoord.longitude=fmin(topLeftCoord.longitude, annotation.coordinate.longitude);
-		topLeftCoord.latitude=fmin(topLeftCoord.latitude, annotation.coordinate.latitude);
 
+		bottomRightCoord.latitude=fmin(bottomRightCoord.latitude, annotation.coordinate.latitude);
 		bottomRightCoord.longitude=fmax(bottomRightCoord.longitude, annotation.coordinate.longitude);
-		bottomRightCoord.latitude=fmax(bottomRightCoord.latitude, annotation.coordinate.latitude);
 	}
 
 	MKCoordinateRegion region;
