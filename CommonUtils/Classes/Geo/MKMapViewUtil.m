@@ -8,9 +8,6 @@
 
 #import "MKMapViewUtil.h"
 
-@import MapKit;
-
-
 @implementation MKMapViewUtil
 
 + (void)zoomToFitMapAnnotations:(MKMapView *)mapView {

@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 twiedow. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import MapKit;
 
 @interface MKMapViewUtil : NSObject
 
