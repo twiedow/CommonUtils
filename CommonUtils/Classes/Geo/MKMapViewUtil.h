@@ -10,6 +10,7 @@
 
 @interface MKMapViewUtil : NSObject
 
++ (MKCoordinateRegion)regionThatFitsAnnotations:(NSArray *)annotations;
 + (void)zoomToFitMapAnnotations:(MKMapView *)mapView;
 
 @end
