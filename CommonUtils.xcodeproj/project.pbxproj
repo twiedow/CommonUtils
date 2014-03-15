@@ -17,6 +17,7 @@
 		5A5B538F18D1AED300ACE04A /* ObjectDumper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B538E18D1AED300ACE04A /* ObjectDumper.m */; };
 		5A5B539718D1CA5B00ACE04A /* GeoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B539618D1CA5B00ACE04A /* GeoUtil.m */; };
 		5A6D732518D3A8DA00B42685 /* LocationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6D732418D3A8DA00B42685 /* LocationUtil.m */; };
+		5A6D732B18D4DBB200B42685 /* MKMapViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6D732A18D4DBB200B42685 /* MKMapViewUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		5A5B539618D1CA5B00ACE04A /* GeoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoUtil.m; sourceTree = "<group>"; };
 		5A6D732318D3A8DA00B42685 /* LocationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUtil.h; sourceTree = "<group>"; };
 		5A6D732418D3A8DA00B42685 /* LocationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUtil.m; sourceTree = "<group>"; };
+		5A6D732918D4DBB200B42685 /* MKMapViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMapViewUtil.h; sourceTree = "<group>"; };
+		5A6D732A18D4DBB200B42685 /* MKMapViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMapViewUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 				5A5B539618D1CA5B00ACE04A /* GeoUtil.m */,
 				5A6D732318D3A8DA00B42685 /* LocationUtil.h */,
 				5A6D732418D3A8DA00B42685 /* LocationUtil.m */,
+				5A6D732918D4DBB200B42685 /* MKMapViewUtil.h */,
+				5A6D732A18D4DBB200B42685 /* MKMapViewUtil.m */,
 			);
 			path = Geo;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A6D732518D3A8DA00B42685 /* LocationUtil.m in Sources */,
+				5A6D732B18D4DBB200B42685 /* MKMapViewUtil.m in Sources */,
 				5A5B538F18D1AED300ACE04A /* ObjectDumper.m in Sources */,
 				5A5B539718D1CA5B00ACE04A /* GeoUtil.m in Sources */,
 			);
