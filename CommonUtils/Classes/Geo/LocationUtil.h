@@ -11,6 +11,9 @@
 
 @import CoreLocation;
 
+extern NSString * const LocationUtilLocationUpdateNotification;
+extern NSString * const LocationUtilUserInfoLocationKey;
+
 @interface LocationUtil : NSObject
 
 @property (strong, nonatomic, readonly) CLLocation *lastCurrentLocation;
@@ -19,5 +22,7 @@
 
 - (void)startLocationUpdates;
 - (void)stopLocationUpdates;
+- (void)requestAlwaysAuthorization;
+- (void)requestWhenInUseAuthorization;
 
 @end

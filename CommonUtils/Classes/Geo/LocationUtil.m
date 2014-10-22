@@ -9,6 +9,10 @@
 #import "LocationUtil.h"
 
 
+NSString * const LocationUtilLocationUpdateNotification = @"LocationUtilLocationUpdateNotification";
+NSString * const LocationUtilUserInfoLocationKey = @"LocationUtilUserInfoLocationKey";
+
+
 @interface LocationUtil () <CLLocationManagerDelegate>
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
@@ -33,15 +37,13 @@
 
 
 - (void)startLocationUpdates {
-	if (self.locationManager == nil && [CLLocationManager locationServicesEnabled] && ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorized || [CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined)) {
-		self.locationManager = [[CLLocationManager alloc] init];
-		self.locationManager.pausesLocationUpdatesAutomatically = YES;
-		self.locationManager.distanceFilter = 100.0;
-		self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
-		self.locationManager.activityType = CLActivityTypeAutomotiveNavigation;
-		self.locationManager.delegate = self;
-		[self.locationManager startUpdatingLocation];
-	}
+	self.locationManager = [[CLLocationManager alloc] init];
+	self.locationManager.pausesLocationUpdatesAutomatically = YES;
+	self.locationManager.distanceFilter = 100.0;
+	self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+	self.locationManager.activityType = CLActivityTypeAutomotiveNavigation;
+	self.locationManager.delegate = self;
+	[self.locationManager startUpdatingLocation];
 }
 
 
@@ -53,11 +55,28 @@
 }
 
 
+- (void)requestAlwaysAuthorization {
+	if (self.locationManager != nil) {
+		[self.locationManager requestAlwaysAuthorization];
+	}
+}
+
+
+- (void)requestWhenInUseAuthorization {
+	if (self.locationManager != nil) {
+		[self.locationManager requestWhenInUseAuthorization];
+	}
+}
+
+
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
 	CLLocation *location = locations.lastObject;
 
-	if (location.horizontalAccuracy >= 0)
+	if (location.horizontalAccuracy >= 0) {
 		self.lastCurrentLocation = location;
+
+		[[NSNotificationCenter defaultCenter] postNotificationName:LocationUtilLocationUpdateNotification object:self userInfo:@{LocationUtilUserInfoLocationKey: location}];
+	}
 }
 
 
